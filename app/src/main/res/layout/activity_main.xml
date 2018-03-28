@@ -10,34 +10,23 @@
     android:paddingTop="@dimen/activity_vertical_padding"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/edt_kota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:weightSum="1">
+        android:hint="@string/masuka_nama_kota" />
 
-        <EditText
-            android:id="@+id/edit_kota"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.8"
-            android:hint="@string/masuka_nama_kota"
-            android:text="@string/id"
-            tools:ignore="Suspicious0dp" />
-
-        <Button
-            android:id="@+id/btn_kota"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.2"
-            android:text="@string/cari" />
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/btn_kota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/cari" />
 
     <ListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
 
+    </ListView>
 </LinearLayout>
